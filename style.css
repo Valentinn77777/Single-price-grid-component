@@ -1,0 +1,249 @@
+@font-face {
+    font-family: Karla;
+    src: url(./fonts/Karla-Regular.ttf);
+}
+
+body {
+    font-family: 'Karla';
+    font-weight: 400, 700;
+}
+
+.title {
+   color: hsl(179, 62%, 43%); 
+   background-color: #FFFFFF;
+   border: -1px solid hsl(204, 43%, 93%);
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   text-align: left;
+   font-size: 20px;
+   text-shadow: 0.5px blue;
+   width: 40%;
+   height: 55%;
+   position: fixed;
+   left: 50%;
+   top: 45%;
+   padding-top: 2%;
+   padding-left: 2%;
+   box-shadow: 0px 2px 2px 2px #D6D6D4;
+   transform: translate(-50%, -50%);
+}
+
+.moneyBack {
+    color: hsl(71, 73%, 54%);
+    position: fixed;
+    top: 24%;
+    left: 31%;
+}
+
+.benefits {
+    color: hsl(218, 22%, 67%);
+    font-size: 16px;
+    width: 40%;
+    height: 80%;
+    position: fixed;
+    top: 29%;
+    left: 31%;
+    
+}
+
+.monthlySub {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    width: 19%;
+    height: 32%;
+    position: fixed;
+    top: 40%;
+    left: 29%;
+    padding-top: 2%;
+    padding-left: 2%;
+    border-bottom-left-radius: 10px;
+
+}
+
+.dollar {
+    color: white;
+    font-size: 30px;
+    position: fixed;
+    top: 48%;
+    left: 31%;
+}
+
+.perMonth {
+    color: #F2F3F5;
+    font-size: 16px;
+    opacity: 0.4;
+    position: fixed;
+    top: 51.8%;
+    left: 35.6%;
+}  
+
+.fullAcessText {
+    color: white;
+    font-size: 14px;
+    opacity: 0.9;
+    position: fixed;
+    top: 57%;
+    left: 31%;
+}
+
+.signupButton {
+    font-size: 16px;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    opacity: 0.9;
+    border: none;
+    border-radius: 5px;
+    width: 14%;
+    height: 7%;
+    position: fixed;
+    top: 66%;
+    left: 32%;
+    cursor: pointer;
+}
+
+.signupButton:hover {
+    transition-duration: 0.4 !important;
+    background-color: hsl(179, 62%, 20%);
+}
+
+.whyUs {
+    color: white;
+    background-color: hsl(179, 55%, 48%);
+    width: 20%;
+    height: 32%;
+    position: fixed;
+    top: 40%;
+    left: 49.1%;
+    padding-top: 2%;
+    padding-left: 2%;
+    border-bottom-right-radius: 10px;
+}
+
+.whyUsWhy {
+    color: white;
+    font-size: 14px;
+    width: 14%;
+    opacity: 0.6;
+    position: absolute;
+    top: 50%;
+    left: 51%;
+}
+
+@media (max-width: 375px){
+.title {
+   color: hsl(179, 62%, 43%); 
+   background-color: #FFFFFF;
+   border: -1px solid hsl(204, 43%, 93%);
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   text-align: left;
+   font-size: 18px;
+   text-shadow: 0.5px blue;
+   width: 70%;
+   height: 70%;
+   position: fixed;
+   left: 50%;
+   top: 45%;
+   padding-top: 5%;
+   padding-left: 3%;
+   box-shadow: 0px 2px 2px 2px #D6D6D4;
+   transform: translate(-50%, -50%);
+}
+
+.moneyBack {
+    color: hsl(71, 73%, 54%);
+    width: 70%;
+    height: 6%;
+    position: fixed;
+    top: 15%;
+    left: 17%;
+}
+
+.benefits {
+    color: hsl(218, 22%, 67%);
+    font-size: 16px;
+    width: 70%;
+    height: 80%;
+    position: fixed;
+    top: 24%;
+    left: 17%;    
+}
+
+.monthlySub {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    width: 70%;
+    height: 25%;
+    position: fixed;
+    top: 40%;
+    left: 13%;
+    padding-top: 4%;
+    padding-left: 4%;
+    border-bottom-left-radius: 0px;
+}
+
+.dollar {
+    color: white;
+    font-size: 30px;
+    position: fixed;
+    top: 45%;
+    left: 17%;
+}
+
+.perMonth {
+    color: #F2F3F5;
+    font-size: 16px;
+    opacity: 0.4;
+    position: fixed;
+    top: 48.8%;
+    left: 33%;
+}  
+
+.fullAcessText {
+    color: white;
+    font-size: 14px;
+    opacity: 0.9;
+    position: fixed;
+    top: 53%;
+    left: 19%;
+}
+
+.signupButton {
+    font-size: 16px;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    opacity: 0.9;
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    height: 7.5%;
+    position: fixed;
+    top: 60%;
+    left: 30%;
+}
+
+.whyUs {
+    color: white;
+    background-color: hsl(179, 55%, 48%);
+    width: 70%;
+    height: 25%;
+    position: fixed;
+    top: 67%;
+    left: 13%;
+    padding-top: 4%;
+    padding-left: 4%;
+    border-bottom-left-radius:  10px;
+    border-bottom-right-radius: 10px;
+}
+
+.whyUsWhy {
+    color: white;
+    font-size: 14px;
+    width: 50%;
+    height: 10%;
+    opacity: 0.6;
+    position: absolute;
+    top: 73.5%;
+    left: 18%;
+}
+}
