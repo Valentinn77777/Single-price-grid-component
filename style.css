@@ -6,244 +6,321 @@
 body {
     font-family: 'Karla';
     font-weight: 400, 700;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    background-color: rgb(82, 82, 82);
+
+    height: 100vh;
+    width: 100vw;
+
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
 
-.title {
-   color: hsl(179, 62%, 43%); 
-   background-color: #FFFFFF;
-   border: -1px solid hsl(204, 43%, 93%);
-   border-top-left-radius: 10px;
-   border-top-right-radius: 10px;
-   text-align: left;
-   font-size: 20px;
-   text-shadow: 0.5px blue;
-   width: 40%;
-   height: 55%;
-   position: fixed;
-   left: 50%;
-   top: 45%;
-   padding-top: 2%;
-   padding-left: 2%;
-   box-shadow: 0px 2px 2px 2px #D6D6D4;
-   transform: translate(-50%, -50%);
+.card {
+    height: 420px;
+    width: 600px;
+
+    margin-top: 100px;
+    margin-bottom: 0px;
+
+    border-radius: 10px;
+
+    background-color: white;
+
+    overflow: hidden;
 }
 
-.moneyBack {
+.card .title {
+    font-size: 23px;
+
+    color: hsl(179, 62%, 43%);
+
+    position: absolute;
+    padding: 35px;
+}
+
+.card .moneyBack {
     color: hsl(71, 73%, 54%);
-    position: fixed;
-    top: 24%;
-    left: 31%;
+
+    position: absolute;
+    padding-top: 75px;
+    padding-left: 32px;
 }
 
-.benefits {
+.card .benefits {
     color: hsl(218, 22%, 67%);
-    font-size: 16px;
-    width: 40%;
-    height: 80%;
-    position: fixed;
-    top: 29%;
-    left: 31%;
+    line-height: 25px;
+
+    height: 50px;
+    width: 550px;
+
+    position: absolute;
+    padding-top: 115px;
+    padding-left: 32px;
+}
+
+.card .Center {
+    color: white;
     
-}
+    height: 220px;
+    width: 270px;
 
-.monthlySub {
     background-color: hsl(179, 62%, 43%);
-    color: white;
-    width: 19%;
-    height: 32%;
-    position: fixed;
-    top: 40%;
-    left: 29%;
-    padding-top: 2%;
-    padding-left: 2%;
-    border-bottom-left-radius: 10px;
 
+    margin-top: 200px;
+
+    overflow: hidden;
 }
 
-.dollar {
-    color: white;
+.Center .monthlySub {
+    font-size: 16px;
+
+    display: flex;
+    justify-content: left;
+
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.Center .dollar {
     font-size: 30px;
-    position: fixed;
-    top: 48%;
-    left: 31%;
+
+    display: flex;
+    justify-content: left;
+
+    padding-top: 15px;
+    padding-left: 25px;
 }
 
-.perMonth {
-    color: #F2F3F5;
-    font-size: 16px;
-    opacity: 0.4;
-    position: fixed;
-    top: 51.8%;
-    left: 35.6%;
-}  
+.Center .perMonth {
+    color: hsl(204, 43%, 93%);
 
-.fullAcessText {
-    color: white;
+    opacity: 0.5;
+
+    position: absolute;
+    padding: 27px;
+    padding-left: 90px;
+}
+
+.Center .fullAcessText {
     font-size: 14px;
-    opacity: 0.9;
-    position: fixed;
-    top: 57%;
-    left: 31%;
+    text-align: left;
+
+    opacity: 0.7;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 10px;
+
 }
 
-.signupButton {
-    font-size: 16px;
+.Center .signupButton {
     color: white;
     background-color: hsl(71, 73%, 54%);
-    opacity: 0.9;
-    border: none;
-    border-radius: 5px;
-    width: 14%;
-    height: 7%;
-    position: fixed;
-    top: 66%;
-    left: 32%;
+
+    border-color: transparent;
+    border-radius: 7px;
+
+    height: 40px;
+    width: 205px;
+
+    margin: 19px;
+    margin-left: 33px;
+
     cursor: pointer;
 }
 
-.signupButton:hover {
-    transition-duration: 0.4 !important;
-    background-color: hsl(179, 62%, 20%);
+.card .Bottom {
+    color: white;
+    
+    height: 220px;
+    width: 350px;
+
+    background-color: hsl(179, 77%, 44%);
+
+    overflow: hidden;
+
+    margin-top: -220px;
+    margin-left: 250px;
 }
 
-.whyUs {
-    color: white;
-    background-color: hsl(179, 55%, 48%);
-    width: 20%;
-    height: 32%;
-    position: fixed;
-    top: 40%;
-    left: 49.1%;
-    padding-top: 2%;
-    padding-left: 2%;
-    border-bottom-right-radius: 10px;
+.Bottom .whyUs {
+    font-size: 18px;
+
+    display: flex;
+    justify-content: left;
+
+    margin: 20px;
 }
 
-.whyUsWhy {
-    color: white;
-    font-size: 14px;
-    width: 14%;
-    opacity: 0.6;
+.Bottom .whyUsWhy {
+    font-size: 16px;
+
+    opacity: 0.7;
+
+    display: flex;
+    justify-content: left;
+
+    margin: 20px;
+}
+
+@media (max-width: 375px) {
+
+.card {
+    height: 700px;
+    width: 300px;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    border-radius: 10px;
+
+    background-color: white;
+
+    overflow: hidden;
+}
+ 
+.card .title {
+    font-size: 18px;
+
+    color: hsl(179, 62%, 43%);
+
     position: absolute;
-    top: 50%;
-    left: 51%;
+    margin-left: 25px;
+    margin-top: 20px;
+
+    padding: 0px;
 }
 
-@media (max-width: 375px){
-.title {
-   color: hsl(179, 62%, 43%); 
-   background-color: #FFFFFF;
-   border: -1px solid hsl(204, 43%, 93%);
-   border-top-left-radius: 10px;
-   border-top-right-radius: 10px;
-   text-align: left;
-   font-size: 18px;
-   text-shadow: 0.5px blue;
-   width: 70%;
-   height: 70%;
-   position: fixed;
-   left: 50%;
-   top: 45%;
-   padding-top: 5%;
-   padding-left: 3%;
-   box-shadow: 0px 2px 2px 2px #D6D6D4;
-   transform: translate(-50%, -50%);
-}
-
-.moneyBack {
+.card .moneyBack {
     color: hsl(71, 73%, 54%);
-    width: 70%;
-    height: 6%;
-    position: fixed;
-    top: 15%;
-    left: 17%;
+
+    width: 250px;
+
+    position: absolute;
+    padding-top: 55px;
+    padding-left: 20px;
 }
 
-.benefits {
+.card .benefits {
     color: hsl(218, 22%, 67%);
-    font-size: 16px;
-    width: 70%;
-    height: 80%;
-    position: fixed;
-    top: 24%;
-    left: 17%;    
+    line-height: 30px;
+
+    width: 270px;
+
+    position: absolute;
+    padding-top: 120px;
+    padding-left: 20px;
 }
 
-.monthlySub {
+.card .Center {
+    color: white;
+    
+    width: 300px;
+    height: 180px;
+
     background-color: hsl(179, 62%, 43%);
-    color: white;
-    width: 70%;
-    height: 25%;
-    position: fixed;
-    top: 40%;
-    left: 13%;
-    padding-top: 4%;
-    padding-left: 4%;
-    border-bottom-left-radius: 0px;
+
+    margin-top: 300px;
+
+    overflow: hidden;
+
+
 }
 
-.dollar {
-    color: white;
+.Center .monthlySub {
+    font-size: 16px;
+
+    display: flex;
+    justify-content: left;
+
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.Center .dollar {
     font-size: 30px;
-    position: fixed;
-    top: 45%;
-    left: 17%;
+
+    display: flex;
+    justify-content: left;
+
+    padding-top: 3px;
+    padding-left: 25px;
 }
 
-.perMonth {
-    color: #F2F3F5;
-    font-size: 16px;
-    opacity: 0.4;
-    position: fixed;
-    top: 48.8%;
-    left: 33%;
-}  
+.Center .perMonth {
+    color: hsl(204, 43%, 93%);
 
-.fullAcessText {
-    color: white;
-    font-size: 14px;
-    opacity: 0.9;
-    position: fixed;
-    top: 53%;
-    left: 19%;
+    opacity: 0.5;
+
+    position: absolute;
+    padding: 16px;
+    padding-left: 90px;
 }
 
-.signupButton {
-    font-size: 16px;
+.Center .fullAcessText {
+    text-align: left;
+
+    opacity: 0.7;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 15px;
+
+}
+
+.Center .signupButton {
     color: white;
     background-color: hsl(71, 73%, 54%);
-    opacity: 0.9;
-    border: none;
-    border-radius: 5px;
-    width: 40%;
-    height: 7.5%;
-    position: fixed;
-    top: 60%;
-    left: 30%;
+
+    border-color: transparent;
+    border-radius: 7px;
+
+    height: 40px;
+    width: 230px;
+
+    margin-left: 33px;
 }
 
-.whyUs {
+.card .Bottom {
     color: white;
-    background-color: hsl(179, 55%, 48%);
-    width: 70%;
-    height: 25%;
-    position: fixed;
-    top: 67%;
-    left: 13%;
-    padding-top: 4%;
-    padding-left: 4%;
-    border-bottom-left-radius:  10px;
-    border-bottom-right-radius: 10px;
+    
+    height: 220px;
+
+    background-color: hsl(179, 77%, 44%);
+
+    overflow: hidden;
+
+    margin-top: 0px;
+    margin-left: 0px;
 }
 
-.whyUsWhy {
-    color: white;
-    font-size: 14px;
-    width: 50%;
-    height: 10%;
-    opacity: 0.6;
-    position: absolute;
-    top: 73.5%;
-    left: 18%;
+.Bottom .whyUs {
+    font-size: 18px;
+
+    display: flex;
+    justify-content: left;
+
+    margin: 20px;
 }
+
+.Bottom .whyUsWhy {
+    font-size: 16px;
+
+    opacity: 0.7;
+
+    display: flex;
+    justify-content: left;
+
+    margin: 20px;
 }
+
+}
+
