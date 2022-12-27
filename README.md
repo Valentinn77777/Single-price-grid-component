@@ -1,1 +1,1 @@
-<h1>Single price grid component Challange</h1>
+<h1> Single Price Grid component Challange Project from https://www.frontendmentor.io</h1>
